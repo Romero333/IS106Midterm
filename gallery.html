@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>IS106 Midterm</title>
+        <title>IS106 Midterm Prep</title>
         <style>
             * {
                 margin: 0px;
@@ -30,20 +30,17 @@
                 grid-template-rows: 1fr 13fr 1fr;
                 height: 100%;
                 grid-row-gap: 1em;
-                background-color: #9BC1BC;
             }
 
             .r1, .r3 {
                 display: grid;
-                background-color: #9BC1BC;
+                background-color: #CCC;
                 padding: 1em;
                 align-items: center;
             }
 
             .r3 {
                 text-align: center;
-                color: #F4F1BB
-                ;
             }
 
             .r2 {
@@ -54,7 +51,7 @@
             .three-column {
                 display: grid;
                 grid-template-columns: 2fr 8fr 3fr;
-                background-color: #9BC1BC;
+                background-color: #FFF;
                 grid-column-gap: 1em;
             }
 
@@ -63,7 +60,7 @@
             }
 
             .c1, .c3 {
-                background-color: #9BC1BC;
+                background-color: #f4f4f4;
             }
 
             .txt-center {
@@ -81,7 +78,7 @@
                 display: block;
                 padding: 15px 0px 15px 30px;
                 background-color: #9BC1BC;
-                color: #E6EBE0;
+                color: #F4F1BB;
                 font-weight: bold;
                 text-decoration: none;
                 transition-duration: 0.7s;
@@ -89,7 +86,6 @@
 
             .left-nav > li > a:hover {
                 background-color: #8d8c8c;
-                color: #E6EBE0;
             }
 
             .c2 {
@@ -98,15 +94,12 @@
                 grid-template-columns: repeat(4, 1fr);
                 /* grid-template-rows: 1fr 1fr 1fr; */
                 grid-auto-rows: min-content;
-                background-color: #9BC1BC;
             }
 
             .h2-content {
                 grid-column: 1 / 5;
                 height: 22px;
                 width: 100%;
-                color: #F4F1BB;
-                
             }
 
             .c2 > img {
@@ -114,21 +107,22 @@
                 align-self: center;
                 max-height: 130px;
             }
-            .header-image {
-                width: 70px;
-                max-height: 70px;
+
+            .c2-first-row {
+                grid-column: 1 / 5;
             }
-            .product-pic {
-                width: 70px;
-                max-height: 70px;
+
+            .grid-button {
+                padding: 6px 12px;
+                background-color: #CCC;
+                float: right;
             }
-            
+
         </style>
     </head>
     <body class="main-container-grid">
         <div class="r1 box-shadow">
             <h2>Estevan Romero</h2>
-            <img class="header-image" src="./img/sm_logo.jpg">
         </div>
         <div class="r2 three-column">
             <div class="c1 box-shadow">
@@ -137,23 +131,24 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./contact-us.html">Contact</a></li>
-                    <li><a href="./gallery-table.html">Gallery</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./login.html">Login</a></li>
                 </ul>
             </div>
             <div class="c2">
-                
-                <h2 class="txt-center h2-content">Welcome</h2>
-                <img class="product-pic" src="./img/image_1.jpeg">
-                <img class="product-pic" src="./img/image_2.jpeg">
-                <img class="product-pic" src="./img/image_3.jpeg">
-                <img class="product-pic" src="./img/image_4.jpeg">
-                <img class="product-pic" src="./img/image_5.jpeg">
-                    
+                <div class="c2-first-row">
+                    <a href="./gallery-table.html" class="grid-button">Grid View</a>
+                    <h2 class="txt-center h2-content">Gallery</h2>
+                </div>
+                    <img class="box-shadow" src="./img/image_1.jpeg">
+                    <img class="box-shadow" src="./img/image_2.jpeg">
+                    <img class="box-shadow" src="./img/image_3.jpeg">
+                    <img class="box-shadow" src="./img/image_4.jpeg">
+                    <img class="box-shadow" src="./img/image_5.jpeg">
+                   
             </div>
             <div class="c3 box-shadow">
                 <h2 class="txt-center">Recent Product</h2>
-                
             </div>
         </div>
         <div class="r3">
